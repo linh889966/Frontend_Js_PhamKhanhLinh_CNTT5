@@ -6,3 +6,4 @@ const students = [
 students.forEach(student => {
     console.log(`Xin chao ${student.name}! Ma so: ${student.id}.`);
 });
+

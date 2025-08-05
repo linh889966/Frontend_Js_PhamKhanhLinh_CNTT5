@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const checkEndString = (longStr, shortStr) => longStr.endsWith(shortStr);
+
+    console.log("Bài 1:");
+    console.log(checkEndString("Hello, World!", "Hello"));
+    console.log(checkEndString("Hi there!", "there!"));
+
+    const formatDate = (date) => {
+        const day = date.getDate().toString().padStart(2, '0');
+        const month = (date.getMonth() + 1).toString().padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    };
+
+    console.log("\nBài 2:");
+    const today = new Date();
+    console.log(formatDate(today));
+
+</script>
+</body>
+</html>
